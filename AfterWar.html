@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+	<title>Dolina Smierci</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="layout.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+	<script src="JS/jQuery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+		$("body").animate({opacity: '1'}, 1000);
+	});</script>
+</head>
+<body style="margin:0 !important;">
+	<div id="Header">
+		<div id="HeaderContent">
+			<ol>
+				<li style="border-left: 1px dashed #ddd;"><a href="index.html">Strona Główna</a></li>
+				<li>Ważne Tematy
+					<ul>
+						<li><a href="Zbrodnia.html">Zbrodnie</a></li>
+						<li><a href="AfterWar.html">Po Wojnie</a></li>
+						<li><a href="Straty.html">Straty ludzkie</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Autorzy i Źródła</a>
+					<ul>
+						<li onclick="ViewAuthors();scrollmeto(0,document.body.offsetHeight,5);">Autorzy</li>
+						<li><p onclick="ViewSources();scrollmeto(0,document.body.offsetHeight,5);">Źródła</p></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<div id="container" style="clear:both; ">
+		<div class="containertext">
+			<h1><b>Po wojnie</b></h1>
+			<h2><b>Działania Niemców</b></h2>
+			Po zakończeniu akcji eksterminacyjnej Niemcy starali się zamaskować ślady zbrodni, między innymi<br> poprzez sadzenie drzew i krzewów na miejscu masowych grobów.<br> Sprawowali też stały nadzór nad „Doliną Śmierci”.<br> Upamiętnienie ofiar mordu było więc możliwe dopiero po zakończeniu działań wojennych.
+			<br><br>
+			<h2><b>Odpowiedzialnosc Sprawcow</b></h2>
+			Większość sprawców zbrodni w „Dolinie Śmierci” uniknęła po wojnie odpowiedzialności karnej. Przed polskimi sądami stanęło jedynie kilku zbrodniarzy. Richard Hildebrandt, wyższy dowódca SS i policji w Okręgu Rzeszy Gdańsk-Prusy Zachodnie, został przez sąd polski w Bydgoszczy skazany na karę śmierci. Wyrok wykonano 10 marca 1951. W tym samym procesie, na karę śmierci skazany został SS-Brigadeführer Max Henze, który od 12 października 1939 pełnił funkcję prezydenta policji w Bydgoszczy. Powieszono go w tym samym dniu co Hildebrandta. Przed polskim wymiarem sprawiedliwości stanął również Eryk Pollatz, aktywny członek Selbstschutzu, odpowiedzialny m.in. za wymordowanie fordońskich Żydów.
+			<br><a href="index.html"><div class="Gemmeback">Zabierz mnie spowrotem! Na główną strone!</div></a>
+		</div>
+		<div class="blackbgrsmall" onclick="ViewAuthors()"><p style="text-align: center; font-family: 'Cormorant Unicase', serif; font-size:30px;">Autorzy</p></div>
+		<div class="blackbgrsmall" onclick="ViewSources()"><p style="text-align: center; font-family: 'Cormorant Unicase', serif; font-size:30px;">Źródła</p></div>
+
+	</div>
+<div id="footerbox">
+	<div id="footer">
+		
+		<div class="author" style="display:block; margin-left:auto; margin-right:25px;">
+			<img src="JPG/Marcin.png" style="border-radius: 100%; max-width: 250px; max-height:250px;"/>
+			<h2>Marcin</h2>
+			<h3><center><b>Opis</b></center></h3>
+			<center>Zarządca projektu. Główny twórca.</center>
+		</div>
+		<div class="author">
+			<img src="JPG/BlankUser.png" style="border-radius: 100%; width: 250px; max-height:250px;"/>
+			<h2>Łukasz</h2>
+			<h3><center><b>Opis</b></center></h3>
+			<center>Konsultant historyczny projektu.</center>
+		</div>
+	</div>
+	<div id="afooter">
+		<div class="sources" style="margin-top:15px;">
+			<a href="#">Wikipedia: https://wikipedia.com</a>
+		</div>
+		<div class="sources">
+			<a href="https://pl.wikipedia.org/wiki/Egzekucje_w_fordo%C5%84skiej_%E2%80%9EDolinie_%C5%9Amierci%E2%80%9D">Wikipedia: https://pl.wikipedia.org/wiki/Egzekucje_w_fordońskiej_„Dolinie_Śmierci”</a>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript" src="JS/ScrollerHeader.js"></script>
+	<script type="text/javascript" src="JS/FooterLogic.js"></script>
+</body>
+</html>

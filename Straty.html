@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+	<title>Dolina Smierci</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="layout.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+	<script src="JS/jQuery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+		$("body").animate({opacity: '1'}, 1000);
+	});</script>
+</head>
+<body style="margin:0 !important;">
+	<div id="Header">
+		<div id="HeaderContent">
+			<ol>
+				<li style="border-left: 1px dashed #ddd;"><a href="index.html">Strona Główna</a></li>
+				<li>Ważne Tematy
+					<ul>
+						<li><a href="Zbrodnia.html">Zbrodnie</a></li>
+						<li><a href="AfterWar.html">Po Wojnie</a></li>
+						<li><a href="Straty.html">Straty ludzkie</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Autorzy i Źródła</a>
+					<ul>
+						<li onclick="ViewAuthors();scrollmeto(0,document.body.offsetHeight,5);">Autorzy</li>
+						<li><p onclick="ViewSources();scrollmeto(0,document.body.offsetHeight,5);">Źródła</p></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<div id="container" style="clear:both; ">
+		<div class="containertext">
+			<h1><b>Straty</b></h1>
+			Historycy nie są w stanie ustalić ilu Polaków i Żydów zostało zamordowanych w „Dolinie Śmierci”, co wynika<br> w dużej mierze z faktu, iż nie odnaleziono żadnych udokumentowanych źródeł zbrodni fordońskiej.<br> Podczas ekshumacji przeprowadzonej w 1947 wydobyto szczątki 306 ciał.<br> Ocenia się jednak, że w „Dolinie Śmierci” wciąż spoczywa w nie odkrytych miejscach od 700 do 1600 zwłok.<br> Stanisław Bator i Rajmund Kuczma oceniali liczbę zamordowanych na 2000 osób.<br> Zdaniem Marii Wardzyńskiej, pracownicy IPN, w bydgoskiej „Dolinie Śmierci” mogło zginąć z rąk Niemców nawet do 3000 osób.<br><br>
+
+			W wyniku egzekucji przeprowadzanych w „Dolinie Śmierci” zginęło 48% nauczycieli<br> bydgoskich szkół średnich, około 33% duchownych, 15% nauczycieli szkół powszechnych i<br> prawie 14% lekarzy oraz prawników. 11 listopada 1939 zginął tam również przedwojenny prezydent Bydgoszczy, Leon Barciszewski. Fordońska „Dolina Śmierci” jest największą zbiorową <br>mogiłą na terenie Bydgoszczy, a zarazem stanowi symbol martyrologii mieszkańców miasta.
+			<br><a href="index.html"><div class="Gemmeback">Zabierz mnie spowrotem! Na główną strone!</div></a>
+		</div>
+		<div class="blackbgrsmall" onclick="ViewAuthors()"><p style="text-align: center; font-family: 'Cormorant Unicase', serif; font-size:30px;">Autorzy</p></div>
+		<div class="blackbgrsmall" onclick="ViewSources()"><p style="text-align: center; font-family: 'Cormorant Unicase', serif; font-size:30px;">Źródła</p></div>
+
+	</div>
+<div id="footerbox">
+	<div id="footer">
+		
+		<div class="author" style="display:block; margin-left:auto; margin-right:25px;">
+			<img src="JPG/Marcin.png" style="border-radius: 100%; max-width: 250px; max-height:250px;"/>
+			<h2>Marcin</h2>
+			<h3><center><b>Opis</b></center></h3>
+			<center>Zarządca projektu. Główny twórca.</center>
+		</div>
+		<div class="author">
+			<img src="JPG/BlankUser.png" style="border-radius: 100%; width: 250px; max-height:250px;"/>
+			<h2>Łukasz</h2>
+			<h3><center><b>Opis</b></center></h3>
+			<center>Konsultant historyczny projektu.</center>
+		</div>
+	</div>
+	<div id="afooter">
+		<div class="sources" style="margin-top:15px;">
+			<a href="#">Wikipedia: https://wikipedia.com</a>
+		</div>
+		<div class="sources">
+			<a href="https://pl.wikipedia.org/wiki/Egzekucje_w_fordo%C5%84skiej_%E2%80%9EDolinie_%C5%9Amierci%E2%80%9D">Wikipedia: https://pl.wikipedia.org/wiki/Egzekucje_w_fordońskiej_„Dolinie_Śmierci”</a>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript" src="JS/ScrollerHeader.js"></script>
+	<script type="text/javascript" src="JS/FooterLogic.js"></script>
+</body>
+</html>
